@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>認知檢查</title>
+    <script type="module" src="https://unpkg.com/wired-elements?module"></script>
+    <link href="https://fonts.googleapis.com/css?family=Schoolbell&v1" rel="stylesheet">
+    <style type="text/css">
+        /*https://www.fonts.net.cn/font-42263396091.html?previewText=%E4%B8%AD%E5%93%A6%E9%82%A3%E5%80%8B%E5%90%BB%E7%88%86%E7%82%B8*/
+        /*字體商業授權需求*/
+        @font-face {
+            font-family: myFirstFont;
+            src: url(ThePeakFontBeta_V0_101.ttf);
+        }
+
+        body {
+            font-family: 'Schoolbell', myFirstFont, arial, serif;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+<h1>認知檢查</h1>
+<p>請勾選以下你認同的項目：</p>
+<table>
+<tr><td><wired-checkbox> 你所處情景的是你的主觀判斷而不是事實</wired-checkbox></tr></td>
+<tr><td><wired-checkbox> 你的情緒反應帶表的是你對所處情景的評估和期盼</wired-checkbox></tr></td>
+<tr><td><wired-checkbox> 你並不完美</wired-checkbox></tr></td>
+<tr><td><wired-checkbox> 你每天只能做出有限的進步</wired-checkbox></tr></td>
+<tr><td><wired-checkbox> 你小心地保障自己的利益並且關心可能的風險</wired-checkbox></tr></td>
+<tr><td><wired-checkbox> 你知道他人所關注的利益所在並且協助保障他們的利益</wired-checkbox></tr></td>
+<tr><td><wired-checkbox> 你喜歡並認可自己的行動</wired-checkbox></tr></td>
+<tr><td><wired-checkbox> 你不介意他人犯錯</wired-checkbox></tr></td>
+<tr><td><wired-checkbox> 你知道人的言行是根據信念對環境做出反應的一種自然現象</wired-checkbox></tr></td>
+<tr><td><wired-checkbox> 你認為自然現象是沒有對錯之分的</wired-checkbox></tr></td>
+<tr><td><wired-checkbox> 你願意忍受不確定的未來，並依然為歡樂而奮鬥、探索</wired-checkbox></tr></td>
+<tr><td><wired-checkbox> 你接受新證據並改變原來對事物的看法</wired-checkbox></tr></td>
+<tr><td><wired-checkbox> 你不斷對現象產生成見，並尋找新證據去驗證、修正你的成見</wired-checkbox></tr></td>
+<tr><td><wired-checkbox> 你依然願意挑戰風險並接受失敗</wired-checkbox></tr></td>
+<tr><td><wired-checkbox> 你知道今天是你人生中的一瞬間</wired-checkbox></tr></td>
+<tr><td><wired-checkbox> 你覺得情況正漸漸變得越來越好</wired-checkbox></tr></td>
+<tr><td><wired-checkbox> 你知道意義是你自己賦予定義的結果</wired-checkbox></tr></td>
+</table>
+<p><em>利益在這裡代表任何獲得滿足感的前提，包括但不限於物質利益與社交利益</em></p>
+<p>狀態：</p>
+<!-- alert(document.querySelectorAll('input[type="checkbox"]:checked').length); -->
+</body>
+</html>

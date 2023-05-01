@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.4/dist/style.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.14.4"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.4/dist/index.umd.min.js"></script><script>(r => {
+          setTimeout(r);
+        })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', (getOptions || markmap.deriveOptions)(jsonOptions), root);
+      })(() => window.markmap,null,{"type":"heading","depth":0,"payload":{"lines":[6,7]},"content":"心靈支援中心","children":[{"type":"heading","depth":1,"payload":{"lines":[7,8]},"content":"日常維護","children":[{"type":"list_item","depth":2,"payload":{"lines":[8,9]},"content":"<a href=\"CognitionCheckList.html\">認知檢查</a>"},{"type":"list_item","depth":2,"payload":{"lines":[9,10]},"content":"<a href=\"ActionCheckList.html\">行動檢查</a>"},{"type":"list_item","depth":2,"payload":{"lines":[10,11]},"content":"<a href=\"CommunicationCheckList.html\">溝通檢查</a>"}]},{"type":"heading","depth":1,"payload":{"lines":[12,13]},"content":"故障支援","children":[{"type":"heading","depth":2,"payload":{"lines":[13,14]},"content":"情緒故障","children":[{"type":"list_item","depth":3,"payload":{"lines":[14,15]},"content":"<a href=\"EmoFirstAid.html\">急救包</a>"},{"type":"list_item","depth":3,"payload":{"lines":[15,16]},"content":"<a href=\"EmoTreatment.html\">治療室</a>"}]},{"type":"heading","depth":2,"payload":{"lines":[17,18]},"content":"溝通指引","children":[{"type":"list_item","depth":3,"payload":{"lines":[18,19]},"content":"<a href=\"EmoComm.html\">感情交流</a>"},{"type":"list_item","depth":3,"payload":{"lines":[19,20]},"content":"<a href=\"NeedsComm.html\">需求不滿</a>"}]}]}]},{"colorFreezeLevel":2,"initialExpandLevel":1})</script>
+</body>
+</html>
